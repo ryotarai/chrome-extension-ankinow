@@ -2,8 +2,8 @@
     "manifest_version": 3,
 
     "name": "Ankinow",
-    "description": "",
-    "version": "0.0.1",
+    "description": "Ankinow is an extension to add words in a web page to Anki",
+    "version": "0.0.2",
 
     "action": {
         "default_icon": "icon16.png"
@@ -27,7 +27,11 @@
     "content_scripts": [
         {
             "matches": ["https://eow.alc.co.jp/*"],
-            "js": ["contentScript.js"]
+            "js": ["contentScriptEow.js"]
+        },
+        {
+            "matches": ["https://eowf.alc.co.jp/*"],
+            "js": ["contentScriptEowf.js"]
         }
     ],
 

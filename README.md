@@ -3,6 +3,7 @@
 ## Supported sites
 
 - [英辞郎 on the web](https://eow.alc.co.jp)
+- [英辞郎 on the web Pro Lite](https://eowf.alc.co.jp)
 
 ## Building
 
