@@ -1,5 +1,9 @@
 # Ankinow
 
+## Supported sites
+
+- [英辞郎 on the web](https://eow.alc.co.jp)
+
 ## Building
 
 1.  Clone repo
@@ -9,6 +13,11 @@
 
 ## Installation
 
-1.  Complete the steps to build the project above
-2.  Go to [_chrome://extensions_](chrome://extensions) in Google Chrome
-3.  With the developer mode checkbox ticked, click **Load unpacked extension...** and select the _dist_ folder from this repo
+1. Install and start Anki app
+1. Install AnkiConnect https://ankiweb.net/shared/info/2055492159
+1. Complete the steps to build the project above
+1. Go to [_chrome://extensions_](chrome://extensions) in Google Chrome
+1. With the developer mode checkbox ticked, click **Load unpacked extension...** and select the _dist_ folder from this repo
+1. Open options page of this extension and configure deck name
+1. Go to supported site such as https://eow.alc.co.jp and search a word
+1. You'll find "Add to Anki" links in the page
