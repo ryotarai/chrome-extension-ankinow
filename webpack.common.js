@@ -5,6 +5,7 @@ module.exports = {
     background: path.join(__dirname, "src/background.ts"),
     contentScriptEow: path.join(__dirname, "src/contentScriptEow.ts"),
     contentScriptEowf: path.join(__dirname, "src/contentScriptEowf.ts"),
+    contentScriptCambridge: path.join(__dirname, "src/contentScriptCambridge.ts"),
     options: path.join(__dirname, "src/options.ts"),
   },
   output: {

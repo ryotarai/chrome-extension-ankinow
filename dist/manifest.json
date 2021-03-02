@@ -32,6 +32,10 @@
         {
             "matches": ["https://eowf.alc.co.jp/*"],
             "js": ["contentScriptEowf.js"]
+        },
+        {
+            "matches": ["https://dictionary.cambridge.org/*"],
+            "js": ["contentScriptCambridge.js"]
         }
     ],
 
