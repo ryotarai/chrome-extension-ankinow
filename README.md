@@ -1,9 +1,17 @@
 # Ankinow
 
+https://chrome.google.com/webstore/detail/ankinow/jomhaklahjhfpfdimldnnfpnapicgplk
+
 ## Supported sites
 
+### English dictionary
+
+- [Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/)
+
+### English-Japanese dictionary
+
 - [英辞郎 on the web](https://eow.alc.co.jp)
-- [英辞郎 on the web Pro Lite](https://eowf.alc.co.jp)
+- [英辞郎 on the web Pro / Pro Lite](https://eowf.alc.co.jp)
 
 ## Building
 
@@ -21,4 +29,4 @@
 1. With the developer mode checkbox ticked, click **Load unpacked extension...** and select the _dist_ folder from this repo
 1. Open options page of this extension and configure deck name
 1. Go to supported site such as https://eow.alc.co.jp and search a word
-1. You'll find "Add to Anki" links in the page
+1. You'll find "Add to Anki" links in supported sites.

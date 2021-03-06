@@ -34,43 +34,23 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                     },
                 }),
             })
-            if (200 <= response.status && response.status < 300) {
+            if (response.ok) {
                 sendResponse({
                     message: "Successfully added a note to Anki",
                 })
             } else {
                 const body = await response.text
                 sendResponse({
-                    message: `Failed to add a note to Anki (${body})`,
+                    message: `Failed to add a note to Anki. Please make sure AnkiConnect is installed and Anki app is running. (${body})`,
                 })
             }
         })().catch(err => {
+            console.error(err)
             sendResponse({
-                message: `Failed to add a note to Anki (${err})`,
+                message: `Failed to add a note to Anki. Please make sure AnkiConnect is installed and Anki app is running. (${err})`,
             })
         })
         return true
     }
     console.error(`unknown request: ${request}`)
 });
-
-// const addToAnki = () => {
-//     console.log("add-to-anki command");
-//     chrome.tabs.query({active: true, currentWindow: true}, tabs => {
-//         console.log("sending a message to tab");
-//         chrome.tabs.sendMessage(tabs[0].id, { type: 'ADD_TO_ANKI' }, (response) => {
-//         });
-//     });
-// }
-
-// chrome.commands.onCommand.addListener((command) => {
-//     switch (command) {
-//         case "add-to-anki":
-//             addToAnki();
-//             break;
-//         default:
-//             console.log('Unknown command:', command);
-//             break;
-//     }
-// });
-  
