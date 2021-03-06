@@ -3,7 +3,7 @@
 
     "name": "Ankinow",
     "description": "Ankinow is an extension to add words in a web page to Anki",
-    "version": "0.0.2",
+    "version": "0.0.3",
 
     "action": {
         "default_icon": "icon16.png"
